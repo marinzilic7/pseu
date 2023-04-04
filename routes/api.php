@@ -38,8 +38,4 @@ Route::get('/pretvori_datum/{datum}', function($datum) {
     return \Carbon\Carbon::parse($datum)->diffForHumans(\Carbon\Carbon::now());
 });
 
-Route::get("student",function (){
-    $name = "Marin";
-    return view("student",["name"=>$name]);
 
-});

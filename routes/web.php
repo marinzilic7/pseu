@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get("student",function (){
+    $name = "Marin";
+    return view("student",["name"=>$name]);
+
+});
+
+Route::get('posts',function (){
+    $post1 = "Moj prvi post";
+    $imena = ['Marin','Marko','Ivan'];
+    return view('posts',['post1'=>$post1,"imena"=>$imena]);
+});
