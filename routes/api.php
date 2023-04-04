@@ -42,3 +42,8 @@ Route::get('/pretvori_datum/{datum}', function($datum) {
     \Carbon\Carbon::setLocale('hr');
     return \Carbon\Carbon::parse($datum)->diffForHumans(\Carbon\Carbon::now());
 });
+
+Route::get('/pretvori_datum/{datum}', function($datum) {
+    \Carbon\Carbon::setLocale('hr');
+    return \Carbon\Carbon::parse($datum)->diffForHumans(\Carbon\Carbon::now());
+});
